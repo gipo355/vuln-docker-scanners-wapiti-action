@@ -1,0 +1,12 @@
+name: "Vuln Docker Scanners Wapiti Action"
+description: "Runs wapiti on a target host"
+author: gipo355
+inputs:
+  target:
+    description: "Host to scan"
+    required: true
+    default: "localhost"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+  # post: "dist/index.js"
