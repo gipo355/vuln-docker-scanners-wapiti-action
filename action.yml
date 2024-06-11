@@ -2,6 +2,9 @@ name: "Vuln Docker Scanners Wapiti Action"
 description: "Runs wapiti on a target host"
 author: gipo355
 inputs:
+  github_token:
+    description: "GitHub token"
+    required: true
   target:
     description: "Host to scan"
     required: true
