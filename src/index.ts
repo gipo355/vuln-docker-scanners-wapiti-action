@@ -35,7 +35,7 @@ async function main() {
   const runCmd = [
     "docker",
     "run",
-    `-v ${workspace}:/root/.wapiti`,
+    `-v ${workspace}/.wapiti:/root/.wapiti`,
     `--network=host`,
     `${imageName}`,
     "-u " + inputs.target,
